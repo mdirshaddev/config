@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@mdirshaddev/config",
+  "version": "0.0.0",
+  "private": false,
+  "type": "commonjs",
+  "homepage": "https://github.com/mdirshaddev/config",
+  "description": "📦 This package is a go to standard config for my own applications and across organization.",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "deduplicate": "pnpm dedupe",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "recursive:echo": "pnpm recursive run echo",
+    "recursive:prettier:check": "pnpm recursive run prettier:check",
+    "recursive:prettier:fix": "pnpm recursive run prettier:fix"
+  },
+  "keywords": [
+    "pnpm-workspace",
+    "typescript",
+    "prettier",
+    "eslint",
+    "shared-config"
+  ],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev@gmail.com",
+    "url": "https://mdirshad.vercel.app"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/config/issues",
+    "email": "mdirshaddev+github@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/config.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=8.9"
+  },
+  "packageManager": "pnpm@8.9.0"
+}
