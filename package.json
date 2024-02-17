@@ -8,12 +8,16 @@
   "description": "📦 This package is a go to standard config for my own applications and across organization.",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "preuninstall": "npx only-allow pnpm",
+    "postinstall": "npm shrinkwrap",
+    "postuninstall": "npm shrinkwrap",
     "deduplicate": "pnpm dedupe",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "recursive:echo": "pnpm recursive run echo",
     "recursive:prettier:check": "pnpm recursive run prettier:check",
-    "recursive:prettier:fix": "pnpm recursive run prettier:fix"
+    "recursive:prettier:fix": "pnpm recursive run prettier:fix",
+    "lockfile-audit": "npx lockfile-lint --path npm-shrinkwrap.json --type npm --allowed-hosts npm yarn --validate-https"
   },
   "keywords": [
     "pnpm-workspace",
