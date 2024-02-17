@@ -1,9 +1,0 @@
-node_modules
-__tests__
-.babelrc
-.npmignore
-.prettierignore
-.eslintignore
-.prettierrc.json
-.eslintrc.json
-jest.config.js
