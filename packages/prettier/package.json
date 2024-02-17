@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@mdirshaddev/prettier",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "homepage": "https://github.com/mdirshaddev/config",
+  "description": "📦 This package is a prettier standard config for my own applications and across organization.",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules nx test",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "keywords": [
+    "pnpm-workspace",
+    "prettier",
+    "shared-config",
+    "shared-prettier-config"
+  ],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev+github@gmail.com",
+    "url": "https://mdirshad.vercel.app"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/config/issues",
+    "email": "mdirshaddev+github@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/config.git",
+    "directory": "packages/prettier"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@babel/preset-env": "^7.23.9",
+    "babel-jest": "^29.7.0",
+    "cross-env": "^7.0.3",
+    "dedent": "^1.5.1",
+    "esm": "^3.2.25",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "prettier": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=8.9"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "main": "prettier-config.cjs",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "tag": "latest",
+    "access": "public"
+  },
+  "sideEffect": false,
+  "nx": {
+    "includedScripts": []
+  }
+}
