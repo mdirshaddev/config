@@ -45,5 +45,8 @@
     "node": ">=18.10",
     "pnpm": ">=8.9"
   },
-  "packageManager": "pnpm@8.9.0"
+  "packageManager": "pnpm@8.9.0",
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
 }
