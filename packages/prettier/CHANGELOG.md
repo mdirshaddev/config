@@ -1,5 +1,11 @@
 # @mdirshaddev/prettier
 
+## 0.1.0
+
+### Minor Changes
+
+- ea6c1d2: actions based workflow for automation of publishing prettier package
+
 ## 0.0.1
 
 ### Patch Changes
