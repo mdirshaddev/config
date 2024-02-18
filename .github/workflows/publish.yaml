@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   publish-all-packages:
     runs-on: ubuntu-latest
@@ -43,8 +45,10 @@ jobs:
       - name: Run tests for each package
         run: pnpm recursive exec -- pnpm test
 
-      - name: Publish to NPM and Create Git Tags
-        run: |
-          npx changeset version
-          npx changeset tag
-          # npx changeset publish
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        with:
+          publish: npx changeset publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
