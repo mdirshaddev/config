@@ -1,0 +1,6 @@
+node_modules
+.pnpm-store
+.pnpm
+
+.nx/cache
+nx-cloud.env

@@ -1,0 +1,92 @@
+{
+  // editor
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Fira Code Retina',Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.stickyScroll.enabled": true,
+  // files
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1600,
+  // workbench
+  "workbench.colorTheme": "Default Dark Modern",
+  "window.commandCenter": true,
+  // Terminal config
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.stickyScroll.maxLineCount": 5,
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-bash",
+      "color": "terminal.ansiGreen",
+      "overrideName": true
+    }
+  },
+  //Files extension config
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonl]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Git config
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // Others
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.tree.enableStickyScroll": true,
+  "editor.stickyScroll.defaultModel": "foldingProviderModel",
+  "editor.hover.sticky": true,
+  "notebook.stickyScroll.mode": "indented"
+}
