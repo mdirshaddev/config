@@ -1,12 +1,12 @@
-name: Development and testing of packages
+name: Publish to npm
 
 on:
   push:
     branches:
-      - development
+      - main
 
 jobs:
-  test-all-packages:
+  publish-all-packages:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,3 +42,9 @@ jobs:
 
       - name: Run tests for each package
         run: pnpm recursive exec -- pnpm test
+
+      - name: Publish to NPM and Create Git Tags
+        run: |
+          npx changeset version
+          npx changeset tag
+          npx changeset publish
